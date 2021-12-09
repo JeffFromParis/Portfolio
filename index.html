@@ -1,28 +1,37 @@
 
-  <html>
-      <head>
-          <title>Jeff Vergne</title>
-      </head>
-      <body>
-        <details>
-            <summary>Clique ici pour voir un chiffre défiler</summary>
-            <p>Fun fact! I've been leaving for <span id="time-container">0</span> seconds!
-        </details>
-        </p>
-        <script>
-            const timeContainer = document.getElementById("time-container");
-            const BIRTH_DAY = "07-06-1985";
-            const BIRTH_DAY_DATE = new Date(BIRTH_DAY);
-            const intlNumberFormatter = new Intl.NumberFormat("en-US");
-        
-            setInterval(() => {
-              const now = new Date();
-              const difference = Math.floor(
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Jeff Vergne's Portfolio">
+    <meta name="author" content="Jeff Vergne">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Jeff Vergne</title>
+    <link rel="shortcut icon" href="./img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+    <details>
+        <summary>Clique ici pour voir un chiffre défiler</summary>
+        <p>Fun fact! I've been leaving for <span id="time-container">0</span> seconds!
+    </details>
+    </p>
+    <script>
+        const timeContainer = document.getElementById("time-container");
+        const BIRTH_DAY = "07-06-1985";
+        const BIRTH_DAY_DATE = new Date(BIRTH_DAY);
+        const intlNumberFormatter = new Intl.NumberFormat("en-US");
+
+        setInterval(() => {
+            const now = new Date();
+            const difference = Math.floor(
                 (now.getTime() - BIRTH_DAY_DATE.getTime()) / 1000
-              );
-        
-              timeContainer.innerText = intlNumberFormatter.format(difference);
-            }, 1000);
-          </script>
-      </body>
-  </html>
+            );
+
+            timeContainer.innerText = intlNumberFormatter.format(difference);
+        }, 1000);
+    </script>
+</body>
+
+</html>
