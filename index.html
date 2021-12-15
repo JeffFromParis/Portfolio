@@ -8,9 +8,12 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Jeff Vergne</title>
     <link rel="shortcut icon" href="./img/icon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
 </head>
-
 <body>
     <nav>
         <h2 id="logo">Jeff Vergne</h2>
@@ -23,12 +26,25 @@
         </ul>
     </nav>
     <main>
-        <section id="about-me">
-            <h2>About Me</h2>
+        <section id="banner">
+            <h1>My Portfolio</h1>
         </section>
+        <section id="about-me">
+            <div id="about-me-text-container">
+                <h2>About Me</h2>
+                <p>Hey there,</p>
+                <p>My name is Jean-François Vergne, I'm a <span id="time-container">0</span> years old Robotics Engineer. I was born in 1985 in Normandy, France. As far as I remember I have always been attracted by robots. Not necessarily creating robots, but using them, programming them. After a few years installing robots, I wanted to get new skills and I motivated myslef to learn how to create websites. I realized that I was interested in coding in a large way, not only for robots. I am still currently learning, this page will probably evolve with time as I will get new skills on my way to become a Fullstack Developer.</p>
+                <p>suite du texte de presentation</p>
+            </div>
+            <div id="about-me-img-container">
+                <img src="./img/portrait.jpg" alt="portrait of Jeff Vergne">
+            </div>
+        </section>
+        <section id="projects"></section>
+        <section id="skills"></section>
         <details>
             <summary>Clique ici pour voir un chiffre défiler</summary>
-            <p>Fun fact! I've been leaving for <span id="time-container">0</span> seconds!</p>
+            <p>Fun fact! I've been leaving for  seconds!</p>
         </details>
     </main>
     <script src="./js/scripts.js"></script>
