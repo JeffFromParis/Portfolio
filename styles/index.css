@@ -7,11 +7,14 @@ html{
 }
 
 body {
-    margin: 0 auto;
-    padding: 0;
-    background-color: #eff9f2;
     max-width: 1200px;
     
+    margin: 0 auto;
+    padding: 0;
+    
+    color: #78a1bb;
+    background-color: #eff9f2;
+
     display: flex;
     flex-direction: column;
 }
@@ -43,17 +46,20 @@ nav a {
     margin: 8px;
 }
 
-/* Styles for the main section on the top of the page*/
+/*****************************************************
+*
+* Styles for the main section on the top of the page
+*
+******************************************************/
 main {
     /* margin: 0; */
 }
 
-#banner {
+.banner {
     /* border: 1px solid blue; */
     width: 100%;
-    padding: 50px 0;
+    padding: 40px 0;
     
-    background-image: url("../img/montmartre-1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,7 +69,19 @@ main {
 
 }
 
-#banner h1{
+#banner-index {
+    background-image: url("../img/montmartre-1-transparent.jpg");
+}
+
+#banner-contact{
+    background-image: url("../img/montmartre-2-transparent.jpg");
+}
+
+#banner-resume{
+    background-image: url("../img/montmartre-3-transparent.jpg");
+}
+
+.banner h1{
     font-size: 4rem;
     color: #78a1bb;
 }
