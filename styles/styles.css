@@ -29,6 +29,10 @@ nav {
     padding: 16px;
 }
 
+nav h2{
+    font-size: 2rem;
+}
+
 nav a {
     text-decoration: none;
     color: #eff9f2;
