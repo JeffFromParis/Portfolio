@@ -161,11 +161,10 @@ main {
     margin-top: 5px;
 }
 
-/* Styles for the footer at the bottom of the page*/
+/* Styles for the footer at the bottom of the pages*/
 footer {
     background-color: #78a1bb;
     color: #eff9f2;
-    display: flex;
-    align-items: center;
+    text-align: right;
     padding: 16px;
 }
