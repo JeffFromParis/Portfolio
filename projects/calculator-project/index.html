@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jeff's Amazing Calculator</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  </head>
+  <body>
+    <div id="container">
+        <header>
+            <h1></h1>
+            <h1></h1>
+        </header>
+        <div id="calculator">
+          <div id="model">
+            <p>Jeff's awesome calculator</p>
+          </div>
+          <input id="screen" value=0>
+          <div id="keypads">
+            <div id="numbers">
+              <div class='number' onclick="newInput(7)">7</div>
+              <div class='number' onclick="newInput(8)">8</div>
+              <div class='number' onclick="newInput(9)">9</div>
+              <div class='number' onclick="newInput(4)">4</div>
+              <div class='number' onclick="newInput(5)">5</div>
+              <div class='number' onclick="newInput(6)">6</div>
+              <div class='number' onclick="newInput(1)">1</div>
+              <div class='number' onclick="newInput(2)">2</div>
+              <div class='number' onclick="newInput(3)">3</div>
+              <div class='number' onclick="newInput('00')">00</div>
+              <div class='number' onclick="newInput(0)">0</div>
+              <div class='number' onclick="newInput('.')">.</div>
+            </div>
+            <div id="others">
+              <div class="parenthesis" onclick="newInput('(')">(</div>  
+              <div class="parenthesis" onclick="newInput(')')">)</div>
+              <div class="operator" onclick="newInput('+')">+</div>
+              <div class="operator" onclick="newInput('-')">-</div>
+              <div class="operator" onclick="newInput('*')">*</div>
+              <div class="operator" onclick="newInput('/')">/</div>            
+              <div id="clear" onclick="removeSingleInput()">C</div>
+              <div id="clear" onclick="removeAllInput()">CA</div>
+              <div id="result" onclick="evaluateFormula()">=</div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="js/operations.js"></script>
+    <script src="js/controls.js"></script>
+    <script src="js/interactions.js"></script>
+  </body>
+</html>

@@ -1,0 +1,207 @@
+html {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    /* opacity: 0.9; */ /* Pourquoi ça change la oculeur ??? passer le background en hsl ? */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    /* max-width: 1200px; */
+    min-width: 500px;
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+/******************************************************
+ header
+ *****************************************************/
+header {
+    border-bottom: 1px solid seashell;
+    height: 70px;
+    width: 100%;
+    /* max-width: 1200px; */
+    
+    background-color:black;
+    position: fixed;
+    top: 0;
+    left: 0px;
+
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    float: left;
+    height: 50px;
+    margin-left: 10px
+}
+
+#navright {
+    float: right;
+}
+
+#navright a {
+    color: seashell;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#navright a:hover{
+    color:coral;
+}
+
+/******************************************************
+ main
+ *****************************************************/
+
+main {
+    position: relative;
+    top: 71px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+ /*Mission section*/
+#mission {
+    /* border: 1px red solid; */
+
+    margin: 0 auto;
+
+    height: 700px;
+    max-width: 1200px;
+    
+    background-image: url("img/img-mission-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mission-content {
+    background-color: black;
+    width: 100%;
+}
+
+#mission-content h2 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#mission-content h4 {
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+/*Features section*/
+#features {
+    /* border: 1px red solid; */
+    
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#feature-intro {
+    margin-top: 50px;
+}
+
+#tea-samples {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.sample {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.sample-img {
+    height: 200px;
+    width: 300px;
+}
+
+.sample-img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.sample-name h4{
+    margin-top: 10px;
+}
+
+
+/*Locations section*/
+#locations {
+    /* border: 1px red solid; */
+
+    margin: 0 auto;
+
+    min-height: 500px;
+    max-width: 1200px;
+
+    background-image: url("img/img-locations-background.jpg");
+    background-position: top;
+    background-size: cover;
+}
+
+#locations h2 {
+    margin-bottom: 15px;
+    padding-top: 90px
+}
+
+.locations-samples {
+    max-width: 1020px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.location{
+    width: 300px;
+    
+    background-color: black;
+    opacity: 1;
+    
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*Contact section*/
+#contact {
+    /* border: 1px red solid; */
+    height: 200px;
+}
+
+/******************************************************
+ footer
+ *****************************************************/
+footer {
+    /* border: 1px red solid; */
+    padding-left: 20px;
+    text-align: left;
+}
