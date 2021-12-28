@@ -138,9 +138,14 @@ main {
 }
 
 .project {
+    color: #eff9f2;
+    background-color: #78a1bb;
+    margin-top: 20px;
     margin-left: 10px;
     margin-right: 10px;
+    padding: 20px;
     width: 300px;
+    border-radius: 20px;
 }
 
 .project-img {
