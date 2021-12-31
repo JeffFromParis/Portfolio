@@ -145,8 +145,8 @@ nav a {
 }
 
 summary{
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 #education ul li {
@@ -189,6 +189,10 @@ they are the common way to display different elements (projects, languages etc..
 
 .item-desc p{
     margin-top: 5px;
+}
+
+.centered{
+    text-align: center;
 }
 
 /* Styles for the footer at the bottom of the pages*/
