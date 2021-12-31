@@ -140,6 +140,22 @@ nav a {
     padding: 16px;
 }
 
+#experiences ul li {
+    margin-bottom: 0.8rem;
+}
+
+summary{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+#education ul li {
+    margin-bottom: 0.8rem;
+}
+/************************************************
+Items are used on several pages
+they are the common way to display different elements (projects, languages etc..) using flex-wrap
+************************************************/
 .items-container {
     display: flex;
     flex-wrap: wrap;
