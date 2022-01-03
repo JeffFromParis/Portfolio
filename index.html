@@ -32,8 +32,15 @@
             <div id="about-me-text-container">
                 <h2>About Me</h2>
                 <p>Hey there,</p>
-                <p>My name is Jean-François Vergne, I'm a <span id="age-in-years-container">0</span> <span id="age-unit">years</span> old Robotics Engineer. I was born in 1985 in Normandy, France. As far as I remember I have always been attracted by robots. Not necessarily creating robots, but using them, programming them. After a few years travelling a lot across Europe and the USA, commissioning mobile robots for major companies (Procter&Gamble, Volkswagen, BASF, Amazon, Renault, BMW...) I wanted to get new skills and I motivated myslef to learn how to create websites. I realized that I was interested in coding in a large way, not only for robots. I am still currently learning, this page will probably evolve with time as I will get new skills on my way to become a Fullstack Developer.</p>
-                <p>I am currently learning how to put some interactivity in a website. For instance, select the unit you would like to use to display my age using the box below:</p>
+                <p>My name is Jean-François Vergne, I'm a <span id="age-value">0</span> <span id="age-unit">years</span> old Robotics Engineer. I was born in 1985 in Normandy, France. As far as I remember I have always been attracted by robots. Not necessarily creating robots, but using them, programming them. After a few years travelling a lot across Europe and the USA, commissioning mobile robots for major companies (Procter&Gamble, Volkswagen, BASF, Amazon, Renault, BMW...) I wanted to get new skills and I motivated myslef to learn how to create websites. I realized that I was interested in coding in a large way, not only for robots. I am still currently learning, this page will probably evolve with time as I will get new skills on my way to become a Fullstack Developer.</p>
+                <p>I am currently learning how to put some interactivity in a website. For instance, select the unit you would like to use to display my age using the radiot buttons below:</p>
+                    <input type="radio" name="unit" value="years" id="choice-years">Years
+                    <input type="radio" name="unit" value="months" id="choice-months">Months
+                    <input type="radio" name="unit" value="weeks" id="choice-weeks">Weeks
+                    <input type="radio" name="unit" value="days" id="choice-days">Days
+                    <input type="radio" name="unit" value="hours" id="choice-hours">Hours
+                    <input type="radio" name="unit" value="minutes" id="choice-minutes">Minutes
+                    <input type="radio" name="unit" value="seconds" id="choice-seconds">Seconds
                 <p> You will find below a few examples of the projects I developped. You will find links to my resume and my contact page in the navigation bar.</p>
             </div>
             <div id="about-me-img-container">
@@ -104,6 +111,7 @@
     <footer>
         developped in Paris, 2022
     </footer>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <script src="./js/scripts.js"></script>
 </body>
 

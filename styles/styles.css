@@ -190,8 +190,9 @@ they are the common way to display different elements (projects, languages etc..
     max-height: 100%;
 }
 
-.item-name h4{
-    /* margin-top: 10px; */
+.item-name h4 a{
+    color: #eff9f2;
+    text-decoration :none;
 }
 
 .item-desc p{

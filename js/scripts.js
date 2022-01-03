@@ -1,10 +1,15 @@
 /*
 This part is about computing the time elapsed since my date of birth
 */
-const ageInYearsContainer = document.getElementById("age-in-years-container");
-const birthdate = new Date(1985,6,7);
+const ageValue = document.getElementById("age-value");
+const ageUnit = document.getElementById("age-unit");;
+const birthdate = new Date(1985,7,6,16,34);
 const now = new Date();
 const intlNumberFormatter = new Intl.NumberFormat("en-US");
+const btn = document.querySelector('#btn');
+
+console.log('Birthdate is ' + birthdate);
+console.log('Today is ' + now);
 
 //Compute the number of seconds between two dates
 function secondsDiff(date1, date2) {
@@ -66,4 +71,49 @@ const differenceInWeeks=weeksDiff(birthdate,now);
 const differenceInYears=yearsDiff(birthdate,now);
 const differenceInMonths=monthsDiff(birthdate,now);
 
-ageInYearsContainer.innerText = intlNumberFormatter.format(differenceInYears);
+ageValue.innerText = intlNumberFormatter.format(differenceInYears);
+ageUnit.innerText = "years";  
+
+
+$(document).ready(function(){
+    $('input[name=unit]').on('change', function(){
+    var n = $(this).val();
+    $('#age-unit').html($(this).val());
+    switch(n)
+    {
+            case 'years':
+                $('#age-value').html(differenceInYears);
+                // $('#age-unit').html('years');
+                break;
+            case 'months':
+                $('#age-value').html(differenceInMonths);
+                // $('#age-unit').html('months');
+                break;
+            case 'weeks':
+                $('#age-value').html(differenceInWeeks);
+                // $('#age-unit').html('months');
+                break;
+            case 'days':
+                $('#age-value').html(differenceInDays);
+                // $('#age-unit').html('months');
+                break;
+            case 'hours':
+                $('#age-value').html(differenceInHours);
+                // $('#age-unit').html('months');
+                break;
+            case 'minutes':
+                $('#age-value').html(differenceInMinutes);
+                // $('#age-unit').html('months');
+            break;
+            case 'seconds':
+                $('#age-value').html(differenceInSeconds);
+                // $('#age-unit').html('months');
+                 break;
+            default:
+                $('#age-value').html(differenceInYears);
+                // $('#age-unit').html('years');
+                break;
+
+        }
+    });
+});
