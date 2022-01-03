@@ -202,6 +202,18 @@ they are the common way to display different elements (projects, languages etc..
     text-align: center;
 }
 
+.checked {
+    color: #eff9f2;
+}
+
+.unchecked {
+    color: rgb(66, 66, 66);
+}
+
+.double-size{
+    font-size: 2rem;
+}
+
 /* Styles for the footer at the bottom of the pages*/
 footer {
     background-color: #78a1bb;
